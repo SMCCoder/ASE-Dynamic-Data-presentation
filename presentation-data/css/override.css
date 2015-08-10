@@ -16,20 +16,22 @@
   background-color: rgba(0,0,0, 0.7);
   /*border-top-left-radius: 30px;
   border-top-right-radius: 30px;*/
-  border-radius: 30px;
+  border-radius: 90px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
+  border: 2px solid darkgray;
   /*margin-left: -999px;
   margin-right: -999px;*/
   box-shadow: 0px 5px 25px -7px #474747;
 }
 
 .Paragraph {
-    /*box-shadow: 0px 5px 25px -7px #474747;
+    box-shadow: 0px 5px 25px -7px #474747;
     background-color: rgba(55,64,79, 0.7);
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
+    border-bottom-right-radius: 20px;
+    border: 2px solid darkgray;
 }
 
 .Paragraph li {
@@ -38,6 +40,8 @@
     font-size: 30px;
     color: white;
     margin-top:20px;
+    text-shadow: 1px 1px 2px black;
+    border: 2px solid darkgray;
 }
 
 .Paragraph p {
@@ -47,6 +51,19 @@
     color: white;
     margin-top:-20px;
     text-shadow: 1px 1px 2px black;
+    border: 2px solid darkgray;
+}
+
+.reveal {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#406dce+0,000e6b+100 */
+background: #406dce; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #406dce 0%, #000e6b 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#406dce), color-stop(100%,#000e6b)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #406dce 0%,#000e6b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #406dce 0%,#000e6b 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #406dce 0%,#000e6b 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #406dce 0%,#000e6b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#406dce', endColorstr='#000e6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 /*.Paragraph span:hover {
