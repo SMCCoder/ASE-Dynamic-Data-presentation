@@ -63,5 +63,3 @@ function bumpLayer(n) {
   for (i = 0; i < 5; ++i) bump(a);
   return a.map(function(d, i) { return {x: i, y: Math.max(0, d)}; });
 }
-
-console.log("Java");

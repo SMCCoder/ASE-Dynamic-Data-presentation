@@ -18,7 +18,7 @@
 
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/league.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
@@ -40,21 +40,23 @@
 	</head>
 
 	<body>
-
         <!-- CUSTOMIZE SLIDES HERE -->
 		<div class="reveal">
 			<!-- Any section element inside of this container is a slide -->
 			<div class="slides">
 
 				<section>
-					<div id="backimage" data-background="presentation-data/img/background-img.jpg">
-					<h2 id="titlepre">Complex Data Structures<small>Sofie Christie</small></h2>
-				</div>
+					<!--<div id="backimage" data-background="presentation-data/img/background-img.jpg">-->
+					<h2 id="titlepre">Complex Data Structures
+						<small style="color: lightgray; padding-bottom: 10px;">Sofie Christie
+							<br style="padding: 20px;">Mentor: Michael Harms</br>Co-mentor: Zach Sailer
+						</small>
+					</h2>
+				<!--</div>-->
 				</section>
 
 				<section>
 					<h2>The Harms Lab</h2>
-					<div class="Paragraph">
 						<ul>
 
 						<li class="fragment">The Harms lab uses coding to explore the relationship
@@ -69,35 +71,59 @@
 
 						</ul>
 
-					</div>
 				</section>
 
 				<section>
 					<h2>Open Source Code</h2>
-					<div class="Paragraph">
 						<p class="fragment">Github was one of the sites I worked with.
 							<img class="img-responsive" style="margin-left: 80px;" height="15%" width="15%" data-src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/blog/github-logo-text-horizontal.png" />
 						</p>
-					</div>
 				</section>
 
 				<section>
 					<h2>What I Have Learned</h2>
-					<div class="Paragraph">
 						<p class="fragment">I got to learn many different computer languages, such as
 						Javascript, Backbone, D3, and JQuery. But the main the thing I've learned to do
 						with it is create data visualizations.</p>
-					</div>
 				</section>
 
 				<section>
-					<h2>What I Did</h2>
-					<div class="Paragraph">
-						<p class="fragment">I took courses in Codecademy, an online site that teaches
-						the fundementals of coding languanges.
-						<img class="img-responsive" style="margin-left: 80px;" height="15%" width="15%" data-src="https://cdn-production.codecademy.com/assets/logo/logo--dark-blue-bf11002ce1caecdfb9fec8d3286b8a8d.svg" />
-					</p>
-					</div>
+					<section>
+						<h2>Why Interactive Data Visualizations Are Important</h2>
+						<p>A regular bar graph, without interaction will show the data in way that is easy
+							to see, but sometimes you need more that to fully understand it.</p>
+						<p>Bar graph without interaction</p>
+					</section>
+					<section>
+						<p>Interactiveness can add a lot to a bar graph - for example, you can be able to
+							sort the bars, see popups that show infomation about the bar, update the data,
+							highlight the bar, and seeing real time data.</p>
+						</p>Bar graph with interaction</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What I Did</h2>
+						<div style="font-size: 30px;">
+							<p class="fragment">I took courses for javascript, html, and jQuery, in
+								Codecademy, an online site that teaches the fundementals of coding
+								languanges.
+								<!--<img class="img-responsive" style="margin-left: 80px;" height="15%" width="15%" data-src="https://cdn-production.codecademy.com/assets/logo/logo--dark-blue-bf11002ce1caecdfb9fec8d3286b8a8d.svg" />-->
+							</p>
+							<p class="fragment">After completing the courses, I started working on
+								exercises where I would edit existing data structures, and then I
+								started to work on creating my own bar graph.</p>
+							<p class="fragment">Bar graph pre ver</p>
+						</div>
+					</section>
+
+					<section>
+						<p>At first, it was a simple bar graph with data loaded
+							into it. But then, I started adding interative features to it, and it
+							had the ability to change the data to random values.</p>
+						<p>Bar graph as of now</p>
+					</section>
 				</section>
 
                 <section>
@@ -139,9 +165,11 @@
                 </section>
 
                 <section>
-                    <h4>D3 embed</h4>
-                    <button align="middle" onclick="transition()">Update</button>
-                    <div id="d3embed"></div>
+					<slide>
+	                    <h4>D3 embed</h4>
+	                    <button align="middle" onclick="transition()">Update</button>
+	                    <div id="d3embed"></div>
+					</section>
                 </section>
 
 			</div>
