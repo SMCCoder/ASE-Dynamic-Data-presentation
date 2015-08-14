@@ -39,6 +39,15 @@
 
 }
 
+.reveal p, .reveal li {
+    font-size: 25px;
+    margin-bottom: 26px;
+}
+
+.reveal code {
+    height: 300px;
+}
+
 .Paragraph {
     /*box-shadow: 0px 5px 25px -7px #474747;
     background-color: rgba(55,64,79, 0.7);
