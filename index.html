@@ -58,10 +58,10 @@
 				</section>
 
 				<section>
-					<h2>World Data</h2>
-
-						<p class="fragment">Data is getting big, with internet giants such as Facebook, Twitter,
-							and Google gathering more data than ever.
+					<section>
+						<h2>Drowning in Data</h2>
+						<p class="fragment">Data is getting big, with internet giants such as Facebook,
+							Twitter, and Google gathering more data than ever.
 							<img width="30%" height="30%" data-src="http://d.ibtimes.co.uk/en/full/
 							1415262/facebook-logo.jpg" />
 							<img style="padding-left: 20px;" width="30%" height="40%" data-src="http://
@@ -71,18 +71,1094 @@
 							<img style="padding-left: 20px;" width="30%" height="30%" data-src="http://
 							bytephoria.com/wp-content/uploads/2015/06/twitter.jpg" />
 						</p>
-						<p class="fragment">It has become a much more of a challenge to extract infomation from
-							big data.</p>
+						<p class="fragment">It has become a much more of a challenge to extract infomation
+							from big data.</p>
+					</section>
+					<section>
+						<p>For example, what if infomation about a network was needed? Here,
+							we have a list of nodes(targets) and links, in this dataset.</p>
+						<pre class="fragment"><code data-trim>
+    var data1 = {
+          "directed": true,
+          "nodes": [
+            {
+              "value": 1.0152510120727598,
+              "binary": "00000",
+              "id": 0,
+              "genotype": "gAEMG",
+              "errors": null,
+              "phenotype": 1.0152510120727598
+            },
+            {
+              "errors": null,
+              "id": 1,
+              "phenotype": 1.0556310301916847,
+              "genotype": "gAEMS",
+              "binary": "00001",
+              "value": 1.0556310301916847
+            },
+            {
+              "errors": null,
+              "id": 2,
+              "phenotype": 1.0068622184069904,
+              "genotype": "gAETG",
+              "binary": "00010",
+              "value": 1.0068622184069904
+            },
+            {
+              "errors": null,
+              "id": 3,
+              "phenotype": 1.0248139196992883,
+              "genotype": "gAKMG",
+              "binary": "00100",
+              "value": 1.0248139196992883
+            },
+            {
+              "errors": null,
+              "id": 4,
+              "phenotype": 1.0152510120727598,
+              "genotype": "gGEMG",
+              "binary": "01000",
+              "value": 1.0152510120727598
+            },
+            {
+              "errors": null,
+              "id": 5,
+              "phenotype": 1.0152510120727598,
+              "genotype": "aAEMG",
+              "binary": "10000",
+              "value": 1.0152510120727598
+            },
+            {
+              "errors": null,
+              "id": 6,
+              "phenotype": 1.0931151178699843,
+              "genotype": "gAETS",
+              "binary": "00011",
+              "value": 1.0931151178699843
+            },
+            {
+              "errors": null,
+              "id": 7,
+              "phenotype": 1.113243817588169,
+              "genotype": "gAKMS",
+              "binary": "00101",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 8,
+              "phenotype": 1.0786314673865984,
+              "genotype": "gGEMS",
+              "binary": "01001",
+              "value": 1.0786314673865984
+            },
+            {
+              "errors": null,
+              "id": 9,
+              "phenotype": 1.0556310301916847,
+              "genotype": "aAEMS",
+              "binary": "10001",
+              "value": 1.0556310301916847
+            },
+            {
+              "errors": null,
+              "id": 10,
+              "phenotype": 1.0334809063896502,
+              "genotype": "gAKTG",
+              "binary": "00110",
+              "value": 1.0334809063896502
+            },
+            {
+              "errors": null,
+              "id": 11,
+              "phenotype": 1.0556310301916847,
+              "genotype": "gGETG",
+              "binary": "01010",
+              "value": 1.0556310301916847
+            },
+            {
+              "errors": null,
+              "id": 12,
+              "phenotype": 1.0152510120727598,
+              "genotype": "aAETG",
+              "binary": "10010",
+              "value": 1.0152510120727598
+            },
+            {
+              "errors": null,
+              "id": 13,
+              "phenotype": 1.0556310301916847,
+              "genotype": "gGKMG",
+              "binary": "01100",
+              "value": 1.0556310301916847
+            },
+            {
+              "errors": null,
+              "id": 14,
+              "phenotype": 1.0334809063896502,
+              "genotype": "aAKMG",
+              "binary": "10100",
+              "value": 1.0334809063896502
+            },
+            {
+              "errors": null,
+              "id": 15,
+              "phenotype": 1.0152510120727598,
+              "genotype": "aGEMG",
+              "binary": "11000",
+              "value": 1.0152510120727598
+            },
+            {
+              "errors": null,
+              "id": 16,
+              "phenotype": 1.113243817588169,
+              "genotype": "gAKTS",
+              "binary": "00111",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 17,
+              "phenotype": 1.113243817588169,
+              "genotype": "gGETS",
+              "binary": "01011",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 18,
+              "phenotype": 1.113243817588169,
+              "genotype": "aAETS",
+              "binary": "10011",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 19,
+              "phenotype": 1.1797097438793012,
+              "genotype": "gGKMS",
+              "binary": "01101",
+              "value": 1.1797097438793012
+            },
+            {
+              "errors": null,
+              "id": 20,
+              "phenotype": 1.113243817588169,
+              "genotype": "aAKMS",
+              "binary": "10101",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 21,
+              "phenotype": 1.113243817588169,
+              "genotype": "aGEMS",
+              "binary": "11001",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 22,
+              "phenotype": 1.044009502834679,
+              "genotype": "gGKTG",
+              "binary": "01110",
+              "value": 1.044009502834679
+            },
+            {
+              "errors": null,
+              "id": 23,
+              "phenotype": 1.0334809063896502,
+              "genotype": "aAKTG",
+              "binary": "10110",
+              "value": 1.0334809063896502
+            },
+            {
+              "errors": null,
+              "id": 24,
+              "phenotype": 1.0152510120727598,
+              "genotype": "aGETG",
+              "binary": "11010",
+              "value": 1.0152510120727598
+            },
+            {
+              "errors": null,
+              "id": 25,
+              "phenotype": 1.0931151178699843,
+              "genotype": "aGKMG",
+              "binary": "11100",
+              "value": 1.0931151178699843
+            },
+            {
+              "errors": null,
+              "id": 26,
+              "phenotype": 1.2233083203139679,
+              "genotype": "gGKTS",
+              "binary": "01111",
+              "value": 1.2233083203139679
+            },
+            {
+              "errors": null,
+              "id": 27,
+              "phenotype": 1.1797097438793012,
+              "genotype": "aAKTS",
+              "binary": "10111",
+              "value": 1.1797097438793012
+            },
+            {
+              "errors": null,
+              "id": 28,
+              "phenotype": 1.113243817588169,
+              "genotype": "aGETS",
+              "binary": "11011",
+              "value": 1.113243817588169
+            },
+            {
+              "errors": null,
+              "id": 29,
+              "phenotype": 1.1386104400539243,
+              "genotype": "aGKMS",
+              "binary": "11101",
+              "value": 1.1386104400539243
+            },
+            {
+              "errors": null,
+              "id": 30,
+              "phenotype": 1.0556310301916847,
+              "genotype": "aGKTG",
+              "binary": "11110",
+              "value": 1.0556310301916847
+            },
+            {
+              "errors": null,
+              "id": 31,
+              "phenotype": 1.3197838706452887,
+              "genotype": "aGKTS",
+              "binary": "11111",
+              "value": 1.3197838706452887
+            }
+          ],
+          "links": [
+            {
+              "target": 1,
+              "mutation": "G4S",
+              "source": 0
+            },
+            {
+              "target": 2,
+              "mutation": "M3T",
+              "source": 0
+            },
+            {
+              "target": 3,
+              "mutation": "E2K",
+              "source": 0
+            },
+            {
+              "target": 4,
+              "mutation": "A1G",
+              "source": 0
+            },
+            {
+              "target": 5,
+              "mutation": "g0a",
+              "source": 0
+            },
+            {
+              "target": 8,
+              "mutation": "A1G",
+              "source": 1
+            },
+            {
+              "target": 9,
+              "mutation": "g0a",
+              "source": 1
+            },
+            {
+              "target": 0,
+              "mutation": "S4G",
+              "source": 1
+            },
+            {
+              "target": 6,
+              "mutation": "M3T",
+              "source": 1
+            },
+            {
+              "target": 7,
+              "mutation": "E2K",
+              "source": 1
+            },
+            {
+              "target": 0,
+              "mutation": "T3M",
+              "source": 2
+            },
+            {
+              "target": 10,
+              "mutation": "E2K",
+              "source": 2
+            },
+            {
+              "target": 11,
+              "mutation": "A1G",
+              "source": 2
+            },
+            {
+              "target": 12,
+              "mutation": "g0a",
+              "source": 2
+            },
+            {
+              "target": 6,
+              "mutation": "G4S",
+              "source": 2
+            },
+            {
+              "target": 0,
+              "mutation": "K2E",
+              "source": 3
+            },
+            {
+              "target": 10,
+              "mutation": "M3T",
+              "source": 3
+            },
+            {
+              "target": 13,
+              "mutation": "A1G",
+              "source": 3
+            },
+            {
+              "target": 14,
+              "mutation": "g0a",
+              "source": 3
+            },
+            {
+              "target": 7,
+              "mutation": "G4S",
+              "source": 3
+            },
+            {
+              "target": 0,
+              "mutation": "G1A",
+              "source": 4
+            },
+            {
+              "target": 8,
+              "mutation": "G4S",
+              "source": 4
+            },
+            {
+              "target": 11,
+              "mutation": "M3T",
+              "source": 4
+            },
+            {
+              "target": 13,
+              "mutation": "E2K",
+              "source": 4
+            },
+            {
+              "target": 15,
+              "mutation": "g0a",
+              "source": 4
+            },
+            {
+              "target": 0,
+              "mutation": "a0g",
+              "source": 5
+            },
+            {
+              "target": 9,
+              "mutation": "G4S",
+              "source": 5
+            },
+            {
+              "target": 12,
+              "mutation": "M3T",
+              "source": 5
+            },
+            {
+              "target": 14,
+              "mutation": "E2K",
+              "source": 5
+            },
+            {
+              "target": 15,
+              "mutation": "A1G",
+              "source": 5
+            },
+            {
+              "target": 16,
+              "mutation": "E2K",
+              "source": 6
+            },
+            {
+              "target": 17,
+              "mutation": "A1G",
+              "source": 6
+            },
+            {
+              "target": 18,
+              "mutation": "g0a",
+              "source": 6
+            },
+            {
+              "target": 2,
+              "mutation": "S4G",
+              "source": 6
+            },
+            {
+              "target": 1,
+              "mutation": "T3M",
+              "source": 6
+            },
+            {
+              "target": 16,
+              "mutation": "M3T",
+              "source": 7
+            },
+            {
+              "target": 1,
+              "mutation": "K2E",
+              "source": 7
+            },
+            {
+              "target": 19,
+              "mutation": "A1G",
+              "source": 7
+            },
+            {
+              "target": 20,
+              "mutation": "g0a",
+              "source": 7
+            },
+            {
+              "target": 3,
+              "mutation": "S4G",
+              "source": 7
+            },
+            {
+              "target": 1,
+              "mutation": "G1A",
+              "source": 8
+            },
+            {
+              "target": 19,
+              "mutation": "E2K",
+              "source": 8
+            },
+            {
+              "target": 4,
+              "mutation": "S4G",
+              "source": 8
+            },
+            {
+              "target": 21,
+              "mutation": "g0a",
+              "source": 8
+            },
+            {
+              "target": 17,
+              "mutation": "M3T",
+              "source": 8
+            },
+            {
+              "target": 1,
+              "mutation": "a0g",
+              "source": 9
+            },
+            {
+              "target": 18,
+              "mutation": "M3T",
+              "source": 9
+            },
+            {
+              "target": 20,
+              "mutation": "E2K",
+              "source": 9
+            },
+            {
+              "target": 21,
+              "mutation": "A1G",
+              "source": 9
+            },
+            {
+              "target": 5,
+              "mutation": "S4G",
+              "source": 9
+            },
+            {
+              "target": 16,
+              "mutation": "G4S",
+              "source": 10
+            },
+            {
+              "target": 2,
+              "mutation": "K2E",
+              "source": 10
+            },
+            {
+              "target": 3,
+              "mutation": "T3M",
+              "source": 10
+            },
+            {
+              "target": 22,
+              "mutation": "A1G",
+              "source": 10
+            },
+            {
+              "target": 23,
+              "mutation": "g0a",
+              "source": 10
+            },
+            {
+              "target": 24,
+              "mutation": "g0a",
+              "source": 11
+            },
+            {
+              "target": 17,
+              "mutation": "G4S",
+              "source": 11
+            },
+            {
+              "target": 2,
+              "mutation": "G1A",
+              "source": 11
+            },
+            {
+              "target": 4,
+              "mutation": "T3M",
+              "source": 11
+            },
+            {
+              "target": 22,
+              "mutation": "E2K",
+              "source": 11
+            },
+            {
+              "target": 24,
+              "mutation": "A1G",
+              "source": 12
+            },
+            {
+              "target": 2,
+              "mutation": "a0g",
+              "source": 12
+            },
+            {
+              "target": 18,
+              "mutation": "G4S",
+              "source": 12
+            },
+            {
+              "target": 5,
+              "mutation": "T3M",
+              "source": 12
+            },
+            {
+              "target": 23,
+              "mutation": "E2K",
+              "source": 12
+            },
+            {
+              "target": 19,
+              "mutation": "G4S",
+              "source": 13
+            },
+            {
+              "target": 25,
+              "mutation": "g0a",
+              "source": 13
+            },
+            {
+              "target": 3,
+              "mutation": "G1A",
+              "source": 13
+            },
+            {
+              "target": 4,
+              "mutation": "K2E",
+              "source": 13
+            },
+            {
+              "target": 22,
+              "mutation": "M3T",
+              "source": 13
+            },
+            {
+              "target": 25,
+              "mutation": "A1G",
+              "source": 14
+            },
+            {
+              "target": 3,
+              "mutation": "a0g",
+              "source": 14
+            },
+            {
+              "target": 20,
+              "mutation": "G4S",
+              "source": 14
+            },
+            {
+              "target": 5,
+              "mutation": "K2E",
+              "source": 14
+            },
+            {
+              "target": 23,
+              "mutation": "M3T",
+              "source": 14
+            },
+            {
+              "target": 24,
+              "mutation": "M3T",
+              "source": 15
+            },
+            {
+              "target": 25,
+              "mutation": "E2K",
+              "source": 15
+            },
+            {
+              "target": 4,
+              "mutation": "a0g",
+              "source": 15
+            },
+            {
+              "target": 5,
+              "mutation": "G1A",
+              "source": 15
+            },
+            {
+              "target": 21,
+              "mutation": "G4S",
+              "source": 15
+            },
+            {
+              "target": 26,
+              "mutation": "A1G",
+              "source": 16
+            },
+            {
+              "target": 27,
+              "mutation": "g0a",
+              "source": 16
+            },
+            {
+              "target": 10,
+              "mutation": "S4G",
+              "source": 16
+            },
+            {
+              "target": 6,
+              "mutation": "K2E",
+              "source": 16
+            },
+            {
+              "target": 7,
+              "mutation": "T3M",
+              "source": 16
+            },
+            {
+              "target": 8,
+              "mutation": "T3M",
+              "source": 17
+            },
+            {
+              "target": 26,
+              "mutation": "E2K",
+              "source": 17
+            },
+            {
+              "target": 11,
+              "mutation": "S4G",
+              "source": 17
+            },
+            {
+              "target": 28,
+              "mutation": "g0a",
+              "source": 17
+            },
+            {
+              "target": 6,
+              "mutation": "G1A",
+              "source": 17
+            },
+            {
+              "target": 9,
+              "mutation": "T3M",
+              "source": 18
+            },
+            {
+              "target": 27,
+              "mutation": "E2K",
+              "source": 18
+            },
+            {
+              "target": 28,
+              "mutation": "A1G",
+              "source": 18
+            },
+            {
+              "target": 6,
+              "mutation": "a0g",
+              "source": 18
+            },
+            {
+              "target": 12,
+              "mutation": "S4G",
+              "source": 18
+            },
+            {
+              "target": 8,
+              "mutation": "K2E",
+              "source": 19
+            },
+            {
+              "target": 26,
+              "mutation": "M3T",
+              "source": 19
+            },
+            {
+              "target": 13,
+              "mutation": "S4G",
+              "source": 19
+            },
+            {
+              "target": 29,
+              "mutation": "g0a",
+              "source": 19
+            },
+            {
+              "target": 7,
+              "mutation": "G1A",
+              "source": 19
+            },
+            {
+              "target": 9,
+              "mutation": "K2E",
+              "source": 20
+            },
+            {
+              "target": 27,
+              "mutation": "M3T",
+              "source": 20
+            },
+            {
+              "target": 29,
+              "mutation": "A1G",
+              "source": 20
+            },
+            {
+              "target": 14,
+              "mutation": "S4G",
+              "source": 20
+            },
+            {
+              "target": 7,
+              "mutation": "a0g",
+              "source": 20
+            },
+            {
+              "target": 8,
+              "mutation": "a0g",
+              "source": 21
+            },
+            {
+              "target": 9,
+              "mutation": "G1A",
+              "source": 21
+            },
+            {
+              "target": 28,
+              "mutation": "M3T",
+              "source": 21
+            },
+            {
+              "target": 29,
+              "mutation": "E2K",
+              "source": 21
+            },
+            {
+              "target": 15,
+              "mutation": "S4G",
+              "source": 21
+            },
+            {
+              "target": 26,
+              "mutation": "G4S",
+              "source": 22
+            },
+            {
+              "target": 10,
+              "mutation": "G1A",
+              "source": 22
+            },
+            {
+              "target": 11,
+              "mutation": "K2E",
+              "source": 22
+            },
+            {
+              "target": 13,
+              "mutation": "T3M",
+              "source": 22
+            },
+            {
+              "target": 30,
+              "mutation": "g0a",
+              "source": 22
+            },
+            {
+              "target": 10,
+              "mutation": "a0g",
+              "source": 23
+            },
+            {
+              "target": 27,
+              "mutation": "G4S",
+              "source": 23
+            },
+            {
+              "target": 12,
+              "mutation": "K2E",
+              "source": 23
+            },
+            {
+              "target": 14,
+              "mutation": "T3M",
+              "source": 23
+            },
+            {
+              "target": 30,
+              "mutation": "A1G",
+              "source": 23
+            },
+            {
+              "target": 28,
+              "mutation": "G4S",
+              "source": 24
+            },
+            {
+              "target": 11,
+              "mutation": "a0g",
+              "source": 24
+            },
+            {
+              "target": 12,
+              "mutation": "G1A",
+              "source": 24
+            },
+            {
+              "target": 30,
+              "mutation": "E2K",
+              "source": 24
+            },
+            {
+              "target": 15,
+              "mutation": "T3M",
+              "source": 24
+            },
+            {
+              "target": 30,
+              "mutation": "M3T",
+              "source": 25
+            },
+            {
+              "target": 29,
+              "mutation": "G4S",
+              "source": 25
+            },
+            {
+              "target": 13,
+              "mutation": "a0g",
+              "source": 25
+            },
+            {
+              "target": 14,
+              "mutation": "G1A",
+              "source": 25
+            },
+            {
+              "target": 15,
+              "mutation": "K2E",
+              "source": 25
+            },
+            {
+              "target": 16,
+              "mutation": "G1A",
+              "source": 26
+            },
+            {
+              "target": 17,
+              "mutation": "K2E",
+              "source": 26
+            },
+            {
+              "target": 19,
+              "mutation": "T3M",
+              "source": 26
+            },
+            {
+              "target": 22,
+              "mutation": "S4G",
+              "source": 26
+            },
+            {
+              "target": 31,
+              "mutation": "g0a",
+              "source": 26
+            },
+            {
+              "target": 16,
+              "mutation": "a0g",
+              "source": 27
+            },
+            {
+              "target": 18,
+              "mutation": "K2E",
+              "source": 27
+            },
+            {
+              "target": 23,
+              "mutation": "S4G",
+              "source": 27
+            },
+            {
+              "target": 20,
+              "mutation": "T3M",
+              "source": 27
+            },
+            {
+              "target": 31,
+              "mutation": "A1G",
+              "source": 27
+            },
+            {
+              "target": 24,
+              "mutation": "S4G",
+              "source": 28
+            },
+            {
+              "target": 17,
+              "mutation": "a0g",
+              "source": 28
+            },
+            {
+              "target": 18,
+              "mutation": "G1A",
+              "source": 28
+            },
+            {
+              "target": 21,
+              "mutation": "T3M",
+              "source": 28
+            },
+            {
+              "target": 31,
+              "mutation": "E2K",
+              "source": 28
+            },
+            {
+              "target": 25,
+              "mutation": "S4G",
+              "source": 29
+            },
+            {
+              "target": 19,
+              "mutation": "a0g",
+              "source": 29
+            },
+            {
+              "target": 20,
+              "mutation": "G1A",
+              "source": 29
+            },
+            {
+              "target": 21,
+              "mutation": "K2E",
+              "source": 29
+            },
+            {
+              "target": 31,
+              "mutation": "M3T",
+              "source": 29
+            },
+            {
+              "target": 24,
+              "mutation": "K2E",
+              "source": 30
+            },
+            {
+              "target": 25,
+              "mutation": "T3M",
+              "source": 30
+            },
+            {
+              "target": 31,
+              "mutation": "G4S",
+              "source": 30
+            },
+            {
+              "target": 22,
+              "mutation": "a0g",
+              "source": 30
+            },
+            {
+              "target": 23,
+              "mutation": "G1A",
+              "source": 30
+            },
+            {
+              "target": 26,
+              "mutation": "a0g",
+              "source": 31
+            },
+            {
+              "target": 27,
+              "mutation": "G1A",
+              "source": 31
+            },
+            {
+              "target": 28,
+              "mutation": "K2E",
+              "source": 31
+            },
+            {
+              "target": 29,
+              "mutation": "T3M",
+              "source": 31
+            },
+            {
+              "target": 30,
+              "mutation": "S4G",
+              "source": 31
+            }
+          ],
+          "multigraph": false,
+          "graph": []
+        }
 
+					    </code></pre>
+						<p class="fragment">It's not very easy understand, is it? So one of the things
+							that can be done is visualizing it.</p>
+					</section>
 				</section>
 
 
 				<section>
 					<h2>How Do We Visualize It?</h2>
-					<p class="fragment">Here's a real life example from a Facebook network
+					<p class="fragment">To show an example, here's a real life Facebook network
+						of friends.
 						<img height="75%" width="75%" data-src="https://orgtheory.files
 						.wordpress.com/2009/02/facebook-network.jpg" />
 					</p>
+
 				</section>
 
 				<section>
@@ -91,8 +1167,8 @@
 						<img height="30%" width="30%" data-src="https://orgtheory.files
 						.wordpress.com/2009/02/facebook-network.jpg" />
 						<p class="fragment">While it shows the connections, it's a bit cluttered and complex.</p>
-						<p class="fragment">It is a projection of a high dimesional dataset, meaning that it can't
-							actually be seen on a flat surface properly.</p>
+						<p class="fragment">It is a projection of a high dimesional dataset, meaning that it
+							can't actually be seen on a flat surface properly.</p>
 						<p class="fragment">However, interactivity can change that.</p>
 					<!--</section>
 					<section>
@@ -108,8 +1184,8 @@
 						<h2>How Can Interaction Add To A Network Visualization?</h2>
 						<p class="fragment">Interactivity can greatly enchance the clarity of
 							the visualization.</p>
-						<p class="fragment">For example, being able to drag the nodes can actually add the dimesions that
-							can't be seen on a flat surface<p>
+						<p class="fragment">For example, being able to drag the nodes can actually add the
+							dimensions that can't be seen on a flat surface<p>
 					</section>
 					<section>
 						<p>Network Viewer Ver1</p>
@@ -156,6 +1232,18 @@
 						width="15%" data-src="http://www.appnexus.com/static-assets/images/components
 						/rich-text/logo_codecademy_2.png" />
 					</p>
+				</section>
+
+				<section>
+					<h2>The Purpose of the Network Viewer</h2>
+					<p class="fragment">The purpose of the Network Viewer is to help gain a better
+						understanding of the question of, is evolution reproducible? and
+						predictable?</p>
+					<p class="fragment">The lab explores these questions by testing the
+						survivability of different mutations of bacteria when exposed to different
+						amounts of antibiotic.</p>
+					<p class="fragment">Since there are so many mutations, it should be visualized,
+						so it is easier to get infomation from it.</p>
 				</section>
 
 				<!--<section>
