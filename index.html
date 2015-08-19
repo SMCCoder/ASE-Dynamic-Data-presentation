@@ -58,8 +58,18 @@
 				</section>
 
 				<section>
+					<h2>Purpose</h2>
+					<p class="fragment">Over the course of the internship, I have worked on and created data
+						visualizations, such as bar graphs and networks.</p>
+					<img class="fragment" style="margin-right: 10px;" width="41.5%" height="41%.5" data-src="presentation-data/img/bargraphpic.png" />
+					<img class="fragment" style="margin-left: 10px;" width="40%" height="40%" data-src="presentation-data/img/networkpic.png" />
+					<p class="fragment">Data visualizations may look nice compared to a table or dataset,
+						but that's not the main reason they're important.</p>
+				</section>
+
+				<section>
 					<section>
-						<h2>Drowning in Data</h2>
+						<h2>Why is Visualizing Data Important?</h2>
 						<p class="fragment">Data is getting big, with internet giants such as Facebook,
 							Twitter, and Google gathering more data than ever.
 							<img width="30%" height="30%" data-src="http://d.ibtimes.co.uk/en/full/
@@ -78,6 +88,7 @@
 						<p>For example, what if infomation about a network was needed? Here,
 							we have a list of nodes(targets) and links, in this dataset.</p>
 						<pre class="fragment"><code data-trim>
+
     var data1 = {
           "directed": true,
           "nodes": [
@@ -1145,19 +1156,18 @@
         }
 
 					    </code></pre>
-						<p class="fragment">It's not very easy understand, is it? So one of the things
-							that can be done is visualizing it.</p>
+						<p class="fragment">It's not very easy understand, is it? But to help
+							that, you can visualize it.</p>
 					</section>
 				</section>
 
 
 				<section>
 					<h2>How Do We Visualize It?</h2>
-					<p class="fragment">To show an example, here's a real life Facebook network
-						of friends.
-						<img height="75%" width="75%" data-src="https://orgtheory.files
-						.wordpress.com/2009/02/facebook-network.jpg" />
-					</p>
+					<p class="fragment" style="margin-bottom: 0px;">To show an example, here's a real life Facebook network
+						of friends.</p>
+					<img class="fragment" height="75%" width="75%" data-src="https://orgtheory.files
+					.wordpress.com/2009/02/facebook-network.jpg" />
 
 				</section>
 
@@ -1185,21 +1195,21 @@
 						<p class="fragment">Interactivity can greatly enchance the clarity of
 							the visualization.</p>
 						<p class="fragment">For example, being able to drag the nodes can actually add the
-							dimensions that can't be seen on a flat surface<p>
+							dimensions that can't be seen on a flat surface.<p>
 					</section>
 					<section>
 						<p>Network Viewer Ver1</p>
 					</section>
 
 					<section>
-						<p>Altering the size can help make it clearer and reduce the clutter</p>
+						<p>Altering the size can help make it clearer and reduce the clutter.</p>
 					</section>
 					<section>
 						<p>Network Viewer Ver2</p>
 					</section>
 
 					<section>
-						<p>Updating the data allows for traversing through datasets</p>
+						<p>Being able to update the data lets the user switch datasets easily.</p>
 					</section>
 					<section>
 						<p>Network Viewer Ver3</p>
@@ -1207,7 +1217,7 @@
 
 					<section>
 						<p>Using the data from trajectories lets the possible paths be highlighted
-							when the nodes part of it of the path are clicked</p>
+							when the nodes part of it of the path are clicked.</p>
 					</section>
 					<section>
 						<p>Network Viewer Ver4</p>
@@ -1215,7 +1225,7 @@
 
 					<section>
 						<p>By having a table that can be clicked on, the path for each possible
-							trajectory can be organized and easily indentifiable</p>
+							trajectory can be organized and easily indentifiable.</p>
 					</section>
 					<section>
 						<p>Network Viewer Ver5</p>
@@ -1224,26 +1234,37 @@
 				</section>
 
 				<section>
-					<h2>How Did I Do It</h2>
-					<p class="fragment">I took courses in javascript, html, and jQuery, through
-						Codecademy, an online site that teaches the fundamentals of coding
-						languanges.
+					<h2>How Did I Do It?</h2>
+					<p class="fragment">To learn what I needed to make the Network Viewer, I
+						took courses in Javascript, HTML, and jQuery, in Codecademy.
 						<img class="img-responsive" style="margin-left: 80px;" height="15%"
 						width="15%" data-src="http://www.appnexus.com/static-assets/images/components
 						/rich-text/logo_codecademy_2.png" />
 					</p>
+					<p class="fragment">Then I started working on existing data visulizations and adding more
+						features to them with D3.
+						<img class="img-responsive" style="margin-left: 100px;" height="20%" width="20%" data-src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/d3-js/d3-js-logo.png" /></p>
+					<p class="fragment">With my mentor's help, I learned some other languages useful for
+						creating data visualizations, such Backbone.</p>
+					<p class="fragment">With time and lots of problem solving, I created the Network Viewer.</p>
 				</section>
 
 				<section>
-					<h2>The Purpose of the Network Viewer</h2>
-					<p class="fragment">The purpose of the Network Viewer is to help gain a better
-						understanding of the question of, is evolution reproducible? and
-						predictable?</p>
-					<p class="fragment">The lab explores these questions by testing the
-						survivability of different mutations of bacteria when exposed to different
-						amounts of antibiotic.</p>
-					<p class="fragment">Since there are so many mutations, it should be visualized,
-						so it is easier to get infomation from it.</p>
+					<h2>What is the Purpose of the Network Viewer?</h2>
+					<img width="20%" height="20%" data-src="presentation-data/img/labpic.jpg" />
+					<p class="fragment">The lab determines the survivability of different mutations of
+						bacteria by exposing them to different amounts of antibiotic.</p>
+					<p class="fragment">Since there are so many mutations, it is easier to understand
+						it when it is in a visualized network, which is what the Network Viewer
+						is for.</p>
+				</section>
+
+				<section>
+					<h2>Acknowledgements</h2>
+					<p>I would like to thank my mentors, Zach Sailer and Mike Harms, for teaching
+						me so much about creating data visualizations. This has been one of the
+						most invaluble experiences I have had, and I would also like to thank the
+						Saturday Academy for giving me this amazing opportunity.</p>
 				</section>
 
 				<!--<section>
